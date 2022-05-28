@@ -1,0 +1,659 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   font-family: 'Inter', sans-serif;
+    font-size: 16px;
+	background-color: #ece2c6;
+}
+
+
+/* BARRA DEL MENU*/
+header{
+	margin-bottom: 40px;
+}
+
+header .contenedor{
+    background-color:#ece2c6;
+    color: #fff;
+    width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.icon-menu{
+	font-size: 40px;
+	display: block;
+	text-align: left;
+	cursor: pointer;
+	color: #444;
+}
+
+header ul.lista{
+	list-style-type: none;
+	z-index: 10;
+	position: absolute;
+	background-color:rgba(236, 226, 198);
+	width: 45%;
+	height: auto;
+	transform: translateX(-1000px);
+	transition: ease-in-out 0.7s;
+}
+header ul.lista.show{
+	transform: none;
+	transition: ease-in-out 0.7s;
+	z-index: 20;
+}
+
+header a{
+	display:blocK;
+    text-decoration: none;
+    color: #333;
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+	border-top: 0.3px solid rgb(128, 128, 128,0.3);
+}
+
+header a:hover{
+	color: gold;
+	transition: all 0.7s;
+	background-color:rgba(36, 42, 43,0.1);
+}
+
+@media only screen and (min-width:768px){
+	header li a {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (min-width:992px){
+	
+	header {
+		margin-bottom: 0;
+	}
+	header .contenedor{
+		position:static;
+		width: auto;
+		height: 50px;
+		margin-bottom: -50px;
+		background: transparent;
+
+	}
+	.icon-menu{
+		display: none;
+	}
+	
+	header ul.lista{
+		transform: translateX(0);
+		list-style-type: none;
+		background-color:transparent;
+		transition: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: auto;
+		margin-right: 20px;
+		margin-top: -50px;
+	}
+	
+	header li{
+		display:inline-block;
+		margin: 0 10px 0 10px;
+	}
+
+	
+	header li a {
+		font-size: 22px;
+		color: #fff;
+		padding: 80px 0;
+	}
+
+	header li a:hover{
+		color: gold;
+		transition: all 0.7s;
+		background-color: transparent;
+	}
+	
+
+}
+
+@media only screen and (min-width:1200px){
+	header li {
+		padding: 0 7px;
+	}
+
+}
+
+@media only screen and (min-width:2000px){
+	header li a {
+		font-size: 50px;
+		
+	}
+
+}
+
+/*------------------BANNER Y MAIN---------------------*/
+main {
+	width: 100%;
+}
+.banner{
+	text-align: center;
+    z-index: 1;
+    color: #fff;
+    position: absolute;
+    margin: auto;
+	transform: translateY(200px);
+	width: 100%;	
+}
+
+.nombre-banner #saludo{
+	font-size: 33px;
+	font-weight: bold;
+}
+.nombre-banner{
+	font-size: 25px;
+}
+
+#nombre > span{
+	font-size:60px;
+	color: #E8F8F5;
+}
+
+.titulo-banner{
+   	margin-top: 10px;
+	font-size: 17px;
+	
+}
+
+.leermas {
+	display: block;
+	transform: translateY(50px);
+	border: 1px solid rgba(255, 255, 255,0.5);
+	margin: 0 auto;
+	padding: 10px 8px;
+	width: 130px;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	border-radius: 7px;
+}
+
+.leermas:hover{
+	
+	border-color: rgba(255, 215, 0,0.5);
+	background-color: rgb(255, 215, 0,0.1);
+}
+.img-main {
+    width: 100%;
+	height: 100vh;
+	object-fit:cover;
+    filter: brightness(0.7)
+}
+
+.boton-abajo-main{
+	display: none;
+}
+
+@media only screen and (min-width:600px){
+	#saludo {
+		font-size: 65px;
+	}
+	.nombre-banner {
+		font-size: 35px;
+	}
+	
+	.titulo-banner{
+		font-size: 25px
+	}
+}
+
+@media only screen and (min-width:992px){
+	.boton-abajo-main{
+		display:block;
+		position: absolute;
+		bottom: 0;
+		left: -21px;
+		margin: 0 50%;
+		text-align: center;
+		margin-bottom: 5px;
+		animation-name: sliceabajo;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		transition: all 1s;
+	}
+	#botonabajito{
+		color:#fff;
+		background-color: rgba(255,255,255,0.2);
+		border-radius: 50%;
+	}
+	
+	@keyframes sliceabajo{
+		0% {color:#fff;
+			
+		}
+		
+		50% {
+			transform: translateY(-15px);
+		}
+		
+		100% {
+			transform: translateY(0px)
+		}
+	}
+	
+	#botonabajito:hover{
+		color: gold;
+	}
+	
+	
+}
+@media only screen and (min-width:1024px){
+	.banner {
+		transform: translateY(250px);
+	}
+	.img-main {
+		height: 100vh;
+	}
+}
+
+@media only screen and (min-width:1440px){
+	.banner {
+		transform: translateY(300px);
+	}
+	#saludo {
+		font-size: 72px;
+	}
+	.nombre-banner {
+		font-size: 40px;
+	}
+	
+	.titulo-banner{
+		font-size: 32px
+	}
+
+	.leermas{
+		transform: translateY(100px);
+		font-size: 20px;
+		width: 150px;
+	}
+}
+@media only screen and (min-width:1700px){
+	.banner {
+		transform: translateY(600px);
+	}
+	#saludo {
+		font-size: 120px;
+	}
+	.nombre-banner {
+		font-size: 80px;
+	}
+	
+	.titulo-banner{
+		font-size: 60px
+	}
+}
+/* ------------------SECCION DEL ABOUT----------------- */
+
+section .about-contenedor{
+	padding: 50px 50px;
+	display:flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.imagenyo img{
+	object-fit: cover;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+
+.links{
+	margin-top: 70px;
+}
+.links a{
+	color:rgb(36, 42, 43);
+	font-size: 27px;
+}
+.links a:hover{
+	color:gold;
+}
+
+.yo {
+	width: auto;
+	margin-top: 40px;
+	line-height: 25px;
+	width: 80%;
+}
+
+.yo h3{
+	font-size: 25px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.boton-arriba, .boton-abajo{
+	display:none;
+}
+
+@media only screen and (min-width:992px){
+	.about {
+		height:100vh;
+	}
+	
+	.about .about-contenedor{
+		height: 90%;
+	}
+	
+	.boton-abajo{
+		display:block;
+		text-align: center;
+		animation-name: sliceabajo;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		transition: all 1s;
+		margin-top: 10px;
+	}
+	
+	.boton-arriba{
+		display:block;
+		text-align: center;
+		animation-name: slicearriba;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		transition: all 1s;
+	}
+	
+	@keyframes slicearriba{
+		0%{
+			color: #000;
+		}
+		
+		50%{
+			transform: translateY(15px);
+		}
+		
+		100% {
+			transform: translateY(0);
+		}
+	}
+	
+	.icon-down-open, .icon-up-open{
+		font-size: 25px;
+		text-decoration: none;
+		color:black;
+		padding: 5px;
+		cursor: pointer;
+	}
+	.imagenyo img {
+		width: 300px;
+		height: 300px;
+	}
+	.yo{
+		padding: 40px;
+		width: 50%;
+	}
+	.about-contenedor{
+		background-color: #ffffffb8;
+		width: 80%;
+		margin: 0 auto;
+		border-radius: 10px;
+	}
+}
+
+@media only screen and (min-width:1200px){
+	.about{
+		height: 100vh;
+	}
+	.imagenyo img {
+		width: 400px;
+		height: 400px;
+	}
+	
+	.yo {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	
+	.yo h3 {
+		font-size: 40px;
+		padding: 30px 0;
+	}
+}
+
+
+/* -----------------SECCION DE SKILLS------------------ */
+
+#experience {
+	background-color:rgb(255, 254, 246);
+}
+
+.works h3{
+	padding-top: 60px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+.tema{
+	margin: 0 auto;
+	width: 70%;
+}
+.tema p {
+	font-size: 16px;
+	margin-top: 15px;
+	text-align: center;
+}
+.works .estudios{
+	margin-top: 60px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+.skilitos {
+	margin-top: 50px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.skilitos ul{
+	margin: 30px auto;
+	text-align: center;
+}
+.skilitos li{
+	list-style:circle;
+	margin: 10px 0;
+	list-style: none;
+}
+.skilitos label{
+	color: #333;
+	font-size: 30px;
+	background: white;
+	border-radius: 50%;
+}
+
+.estudios div{
+	border-radius: 50%;
+	padding: 10px;
+	margin: 10px;
+	box-shadow: 5px 5px 5px #888;	
+	cursor: pointer;
+	animation: grow 3s ease-in-out infinite;
+}
+#html5{
+	background-color: rgb(216, 142, 142);
+	animation-delay: 0.5s;
+}
+
+#css3{
+	background-color:rgb(163, 196, 230);
+	animation-delay: 1s;
+}
+
+#js {
+	background-color: rgb(230, 223, 183);
+	animation-delay: 1.5s;
+}
+
+#wordpress{
+	background-color: rgb(183, 225, 230);
+	animation-delay: 2s;
+}
+
+#react {
+	background-color: rgb(36, 42, 43);
+	animation-delay: 2.5s;
+}
+
+#node {
+	background-color: rgb(215, 225, 219);
+	animation-delay: 3s;
+}
+
+
+@keyframes grow {
+	0%, 40%, 100%{
+		transform: scale(0.8);
+	}
+	20%{
+		transform: scale(1.2);
+	}
+	
+}
+/*.estudios div:hover {
+	background-color:aliceblue;
+	transition: all 0.5s;
+	animation-name: vuelta;
+	animation-duration: 2s;
+}
+
+@keyframes vuelta {
+	0% {transform:rotateY(0deg)}
+	25% {transform:rotateY(90deg)}
+	50%{transform:rotateY(180deg)}
+	75%{transform:rotateY(270deg)}
+	100%{transform:rotateY(360deg)}
+}*/
+
+.works img {
+	width: 80px;
+	height: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+	.estudios {
+		width: 60%;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+	.works img{
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media only screen and (min-width:992px){
+	.works{
+		height: 100vh;
+	}
+	
+	.works .works-contenedor{
+		height: 90%;
+	}
+	.works-contenedor{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	.skilitos{
+		border-top: 1px solid rgba(0,0,0,0.1);
+		padding-top: 6px;
+		border-bottom: none;
+		width: 50%;
+		margin: 10px auto;
+	}
+	.tema{
+		padding:30px;
+		flex-shrink: 2;
+		height: auto;
+		align-self: stretch;
+	}
+
+	.tema p {
+		margin-top: 15px;
+		line-height: 25px;
+		font-size: 17px;
+		padding-bottom:50px;
+	}
+
+	.works img{
+		width: 150px;
+		height: 150px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.tema {
+		padding: 0 50px;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.tema {
+		width: 80%;
+		margin: 0 50px;
+		flex-shrink: 1;
+	}
+}
+/*-------FOOTER----- */
+
+footer{
+	background: #cec49e;
+	width: 100%;
+	height: auto;;
+	color: #333;
+}
+
+.footer-contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	align-items: center;
+	padding: 30px;
+}
+
+.contacto p {
+	font-size: 12px;
+	padding: 5px;
+	text-align: center;
+}
+
+.footer-contenedor h3{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 10px;;
+}
+
+.sociales {
+	margin: 20px 100px;
+}
+
+footer .icon-facebook, footer .icon-instagram, footer .icon-linkedin {
+	font-size: 30px;
+	color:rgb(36, 42, 43);
+}
+
+footer .icon-facebook:hover, footer .icon-instagram:hover, footer .icon-linkedin:hover {
+	color:gold;
+}
+
+
+.copyright{
+	font-size: 12px
+}
