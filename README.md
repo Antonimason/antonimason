@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Antonio Giambra</h1>
 <h3 align="center">I was born and raised in Caracas-Venezuela and currently reside in Dublín-Ireland. I am a self-taught web developer and highly motivated for learning new technologies.</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=antonimason&label=Profile%20views&color=0e75b6&style=flat" alt="antonimason" /> </p>
+<img src="https://komarev.com/ghpvc/?username=antonimason&label=Profile%20views&color=0e75b6&style=flat" alt="antonimason" />
 
 - 🌱 I’m currently learning **React, Redux and ReactNative**
 
