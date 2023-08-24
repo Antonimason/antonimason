@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **React, Redux and ReactNative**
 
-- 👨‍💻 All of my projects are available at [https://antonimason.netlify.app/](https://antonimason.netlify.app/)
+- 👨‍💻 All of my projects are available at <a href="https://antonimason-portfolio.netlify.app/">Antonimason</a>
 
 - 📫 How to reach me **antonio.jose.giambra@gmail.com**
 
