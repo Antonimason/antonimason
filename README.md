@@ -3,7 +3,14 @@
 
 <img src="https://komarev.com/ghpvc/?username=antonimason&label=Profile%20views&color=0e75b6&style=flat" alt="antonimason" />
 
-- 🌱 I’m currently learning **React, Redux and ReactNative**
+<h2>**Diploma in Software Development**</h2>h2>
+Currently enrolled in the Diploma in Software Development program at CCT Dublin College, focusing on acquiring comprehensive knowledge and practical skills in various aspects of software development.
+
+<h3>Technical Skills</h3>h3>
+
+Proficient in Java programming language, actively developing and expanding my expertise in application development.
+Learning PHP and MySQL to build dynamic and interactive web applications.
+Acquiring proficiency in mobile app development using Java within the Android Studio environment.
 
 - 👨‍💻 All of my projects are available at <a href="https://antonimason-portfolio.netlify.app/">Antonimason</a>
 
