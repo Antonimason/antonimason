@@ -3,8 +3,13 @@
 
 <img src="https://komarev.com/ghpvc/?username=antonimason&label=Profile%20views&color=0e75b6&style=flat" alt="antonimason" />
 
-<h2>Diploma in Software Development</h2>
-Currently enrolled in the Diploma in Software Development program at CCT Dublin College, focusing on acquiring comprehensive knowledge and practical skills in various aspects of software development.
+<h2>Career</h2>
+
+<h3>Higher Diploma in Science in Data Analytics for Business</h3>
+Currently enrolled
+
+<h3>Diploma in Software Development</h3>
+Finished in Diploma in Software Development program at CCT Dublin College, focusing on acquiring comprehensive knowledge and practical skills in various aspects of software development.
 
 <h3>Technical Skills</h3>
 
