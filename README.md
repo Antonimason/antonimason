@@ -11,10 +11,10 @@ Currently enrolled
 <h3>Diploma in Software Development</h3>
 Finished in Diploma in Software Development program at CCT Dublin College, focusing on acquiring comprehensive knowledge and practical skills in various aspects of software development.
 
-<h3>Technical Skills</h3>
+<h4>Technical Skills</h4>
 
-- Proficient in Java programming language, actively developing and expanding my expertise in application development.
-- Learning PHP and MySQL to build dynamic and interactive web applications.
+- Proficient in Java programming language and Python, actively developing and expanding my expertise in application development.
+- Learning Javascript, PHP and MySQL to build dynamic and interactive web applications.
 - Acquiring proficiency in mobile app development using Java within the Android Studio environment.
 
 <h3>Projects</h3>
