@@ -73,7 +73,7 @@ During my studies at CCT College Dublin, I built a strong foundation in software
 - Email: **antonio.jose.giambra@gmail.com**
 
 <p align="left">
-  <a href="https://linkedin.com/in/antonio giambra castellanos" target="blank">
+  <a href="[https://linkedin.com/in/antonio giambra castellanos](https://www.linkedin.com/in/antonio-giambra-castellanos-293148233/)" target="blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
   </a>
   <a href="https://instagram.com/anto_code9" target="blank">
