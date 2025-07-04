@@ -17,7 +17,7 @@
 
 ---
 
-### 🧠 What I Learned in My Data Analytics Course
+### 🧠 What I Learned in My Data Analytics Diploma
 
 During my Higher Diploma in Science in Data Analytics, I gained hands-on experience with:
 
@@ -81,10 +81,4 @@ During my studies at CCT College Dublin, I built a strong foundation in software
   </a>
 </p>
 
----
 
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=antonimason&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
-</p>
